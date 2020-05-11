@@ -57,9 +57,19 @@ html{
 .m0child *  {   margin:  0px;    }
 /* BoxModel>>_______________________________________________________ */
 
+/* Container<<______________________________________________________ */
+.container  {   max-width: 1140px; margin: auto;   }
+/* Container>>______________________________________________________ */
+
+/* Flex<<______________________________________________________ */
+.flex           {   display: flex;  }
+.flexSideSide   {   display: flex; justify-content: space-between; align-items: center;  }
+.flexCol        {   display: flex; flex-direction: column; justify-content: center; align-items: center;  }
+/* Flex>>______________________________________________________ */
+
 /* Generic<<________________________________________________________ */
 body{
     margin: 0px;
 }
-li{ list-style: none;}
+li{ list-style: none; padding-left: 0px;}
 /* Generic<<________________________________________________________ */

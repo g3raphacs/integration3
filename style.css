@@ -1,0 +1,21 @@
+/* Fonts<<__________________________________________________________ */
+fSize50 {   font-size:  3.13rem;     }
+fSize34 {   font-size:  2.13rem;     }
+fSize22 {   font-size:  1.38rem;     }
+fSize20 {   font-size:  1.25rem;     }
+fSize18 {   font-size:  1.11rem;     }
+fSize16 {   font-size:  1rem;        }
+fSize15 {   font-size:  0.94rem;     }
+fSize14 {   font-size:  0.88rem;     }
+fMed    {   font-weight: 500;        }
+fBold   {   font-weight: 700;        }
+fontSec {   font-family: 'Poppins', sans-serif; }
+
+html{
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+/* Fonts>>__________________________________________________________ */
+

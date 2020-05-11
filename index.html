@@ -9,84 +9,92 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="container">
-        <!-- NavBar  -->
-        <nav id="navbar" class="flexSideSide">
-            <div id="navleft" class="flexSideSide">
-                <div class="logo"></div>
-                <menu class="flexSideSide">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </menu>
-            </div>
-            <form id="searchform" action=""><input type="search" name="search" aria-label="Search here"></form>
-        </nav>
-        <!-- Title  -->
-        <section id="title">
-            <header>
-                <h1 class="fontSec fSize50 fBold TXTmainDark">Our Prices</h1>
-                <p class="fSize22">We help company set up business strategy including design brand identiy or product design service.</p>
-                <div class="flex">
-                    <div><a class="button" href="#">Free consultation</a></div>
-                    <div><a class="TXTmainDark" href="#">View projects</a></div>
+    <header id="mainheader">
+        <div class="container">
+            <!-- NavBar  -->
+            <nav id="navbar" class="flexSideSide">
+                <div id="navleft" class="flexSideSide">
+                    <div class="logo"></div>
+                    <menu class="flexSideSide">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </menu>
                 </div>
-            </header>
-        </section>
+                <form id="searchform" action=""><input type="search" name="search" aria-label="Search here"></form>
+            </nav>
+            <!-- Title  -->
+            <section id="title">
+                <header>
+                    <h1 class="fontSec fSize50 fBold TXTmainDark">Our Prices</h1>
+                    <p class="fSize22 TXTjustif">We help company set up business strategy including design brand identiy or product design service.</p>
+                    <div class="flex">
+                        <div><a class="button" href="#">Free consultation</a></div>
+                        <div><a class="TXTmainDark linkPink" href="#">View projects</a></div>
+                    </div>
+                </header>
+            </section>
+        </div>
     </header>
 
     <main class="container">
         <!-- PRICE___________________________________________________________________________ -->
         <div id="price" class="flexSideSide" class="BCKwhite shadow">
             <!-- Basic  -->
-            <section id="priceBasic">
+            <section id="priceBasic" class="BCKwhite shadow priceblock"">
                 < class="flexSideSide">
                     <header><h2 class="TXTmainDark fSize20 fBold fontSec">Basic</h2></header>
-                    <p class="BCKgray TXThighlight">best choise </p>
+                    <p id="buttonchoice" class="BCKgray TXThighlight fSize10">best choise </p>
                 </div>
                 <hr>
                 <p class="TXTmainDark fSize50 fBold fontSec">15$</p>
                 <p>Per month</p>
-                <ul class="fSize18">
-                    <li>Free updates</li>
-                    <li>Custom domain</li>
-                    <li>Outstanding support</li>
-                    <li class="alpha70">Unlimited storage</li>
-                    <li class="alpha70">Build responsive website</li>
-                </ul>
+                <div class="ulcenter">
+                    <ul class="fSize18">
+                        <li>Free updates</li>
+                        <li>Custom domain</li>
+                        <li>Outstanding support</li>
+                        <li class="alpha70">Unlimited storage</li>
+                        <li class="alpha70">Build responsive website</li>
+                    </ul>
+                </div>
                 <div><a class="button" href="#">Getting started</a></div>
             </section>
             <!-- Standard  -->
-            <section id="priceStandard" class="BCKwhite shadow">
+            <section id="priceStandard" class="BCKwhite shadow priceblock">
                 <header><h2 class="TXTmainDark fSize20 fBold fontSec">Standard</h2></header>
                 <hr>
                 <p class="TXTmainDark fSize50 fBold fontSec">37$</p>
                 <p>Per month</p>
-                <ul class="fSize18">
-                    <li>Free updates</li>
-                    <li>Custom domain</li>
-                    <li>Outstanding support</li>
-                    <li>Unlimited storage</li>
-                    <li class="alpha70">Build responsive website</li>
-                </ul>
+                <div class="ulcenter">
+                    <ul class="fSize18">
+                        <li>Free updates</li>
+                        <li>Custom domain</li>
+                        <li>Outstanding support</li>
+                        <li>Unlimited storage</li>
+                        <li class="alpha70">Build responsive website</li>
+                    </ul>
+                </div class="ulcenter">
                 <div><a class="button" href="#">Getting started</a></div>
             </section>
             <!-- Advance  -->
-            <section id="priceAdvance" class="BCKwhite shadow">
+            <section id="priceAdvance" class="BCKwhite shadow priceblock">
                 <header><h2 class="TXTmainDark fSize20 fBold fontSec">Advance</h2></header>
                 <hr>
                 <p class="TXTmainDark fSize50 fBold fontSec">42$</p>
                 <p>Per month</p>
-                <ul class="fSize18">
-                    <li>Free updates</li>
-                    <li>Custom domain</li>
-                    <li>Outstanding support</li>
-                    <li>Unlimited storage</li>
-                    <li>Build responsive website</li>
-                </ul>
+                <div class="ulcenter">
+                    <ul class="fSize18">
+                        <li>Free updates</li>
+                        <li>Custom domain</li>
+                        <li>Outstanding support</li>
+                        <li>Unlimited storage</li>
+                        <li>Build responsive website</li>
+                    </ul>
+                </div class="ulcenter">
                 <div><a class="button" href="#">Getting started</a></div>
             </section>
         </div>
@@ -145,7 +153,7 @@
             <p class="fSize18">Commodo nulla facilisi nullam vehicula ipsum sociis. Faucibus scelerisque eleifend donec pretium necud vulputate sapien nec, elit eget gravida cum. </p>
             <div class="flex">
                 <div><a class="button" href="#">Be One of Us</a></div>
-                <div><a class="TXTmainDark fSize15" href="#">Support projects</a></div>
+                <div><a class="TXTmainDark fSize15 linkPink" href="#">Support projects</a></div>
             </div>
         </section>
     </main>
@@ -178,13 +186,13 @@
                 <p class="TXTmainDark fSize20 fBold fontSec">Links</p>
                 <div class="flex">
                     <ul class="fSize18">
-                        <li><a class="TXTmainDark" href="#">About company</a></li>
-                        <li><a class="TXTmainDark" href="#">Our services</a></li>
-                        <li><a class="TXTmainDark" href="#">Portfolio</a></li>
+                        <li><a class="TXTmainDark linkPink" href="#">About company</a></li>
+                        <li><a class="TXTmainDark linkPink" href="#">Our services</a></li>
+                        <li><a class="TXTmainDark linkPink" href="#">Portfolio</a></li>
                     </ul>
                     <ul class="fSize18">
-                        <li><a class="TXTmainDark" href="#">Team</a></li>
-                        <li><a class="TXTmainDark" href="#">Contact</a></li>
+                        <li><a class="TXTmainDark linkPink" href="#">Team</a></li>
+                        <li><a class="TXTmainDark linkPink" href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>

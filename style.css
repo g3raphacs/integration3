@@ -7,6 +7,7 @@
 .fSize16 {   font-size:   1rem;       }
 .fSize15 {   font-size:   0.94rem;    }
 .fSize14 {   font-size:   0.88rem;    }
+.fSize10 {   font-size:   0.63rem;    }
 .fMed    {   font-weight: 500;        }
 .fBold   {   font-weight: 700;        }
 .fontSec {   font-family: 'Poppins', sans-serif; }
@@ -85,6 +86,45 @@ a   {   text-decoration: none;  }
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
-/* Navbar<<________________________________________________________ */
+.linkPink:hover{ color: var(--Col_Sec);}
+/* Background Images */
+.logo{
+    width: 119px;
+    height: 40px;
+    background-image: url("./img/Logo-White.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#mainheader{
+    background-image: url("./img/shape.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 /* Navbar<<________________________________________________________ */
+#navleft        {   flex: 0 0 56%;  }
+#searchform     {   flex: 0 0 33%;  }
+menu            {   flex: 0 3 80%;  }
+menu a          {   font-weight: 700; color: var(--Col_MainDark); padding-top: 40px; border-top: 2px solid linear-gradient(45deg,var(--Col_Main)var(--Col_Sec)); }
+#searchform>input{
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid #D5D5D5;
+    background-image: url(./img/loupe.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 0px 12px;
+}
+/* Navbar<<________________________________________________________ */
+
+/* Title<<_________________________________________________________ */
+#title  {   max-width: 436px;   }
+/* Title<<_________________________________________________________ */
+
+/* Prices<<_________________________________________________________ */
+#priceblock{padding: 60px 50px; flex: 0 28%;}
+#buttonchoice{padding: 4px 7px;}
+.ulcenter{display: flex; justify-content: center; width:100%;}
+/* Prices<<_________________________________________________________ */

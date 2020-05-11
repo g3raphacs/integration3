@@ -10,6 +10,7 @@
 </head>
 <body>
     <header class="container">
+        <!-- NavBar  -->
         <nav id="navbar" class="flexSideSide">
             <div id="navleft" class="flexSideSide">
                 <div class="logo"></div>
@@ -24,6 +25,7 @@
             </div>
             <form id="searchform" action=""><input type="search" name="search" aria-label="Search here"></form>
         </nav>
+        <!-- Title  -->
         <section id="title">
             <header>
                 <h1>Our Prices</h1>
@@ -38,7 +40,8 @@
 
     <main class="container">
         <!-- PRICE___________________________________________________________________________ -->
-        <div id="price" class="flexSideSide">
+        <div id="price" class="flexSideSide" class="BCKwhite shadow">
+            <!-- Basic  -->
             <section id="priceBasic">
                 <div class="flexSideSide">
                     <header><h2>Basic</h2></header>
@@ -51,14 +54,13 @@
                     <li>Free updates</li>
                     <li>Custom domain</li>
                     <li>Outstanding support</li>
-                    <li>Unlimited storage</li>
-                    <li>Build responsive website</li>
+                    <li class="alpha70">Unlimited storage</li>
+                    <li class="alpha70">Build responsive website</li>
                 </ul>
                 <div><a class="button" href="#">Getting started</a></div>
-
             </section>
-
-            <section id="priceStandard">
+            <!-- Standard  -->
+            <section id="priceStandard" class="BCKwhite shadow">
                 <header><h2>Standard</h2></header>
                 <hr>
                 <p>37$</p>
@@ -68,12 +70,12 @@
                     <li>Custom domain</li>
                     <li>Outstanding support</li>
                     <li>Unlimited storage</li>
-                    <li>Build responsive website</li>
+                    <li class="alpha70">Build responsive website</li>
                 </ul>
                 <div><a class="button" href="#">Getting started</a></div>
             </section>
-
-            <section id="priceAdvance">
+            <!-- Advance  -->
+            <section id="priceAdvance" class="BCKwhite shadow">
                 <header><h2>Advance</h2></header>
                 <hr>
                 <p>42$</p>
@@ -88,40 +90,46 @@
                 <div><a class="button" href="#">Getting started</a></div>
             </section>
         </div>
-
-        <section id="testimonial" class="TXTcenter">
+        <!-- TESTIMONIAL___________________________________________________________________________ -->
+        <section id="testimonial" class="TXTcenter BCKgray">
             <header><h2>Happy clients about us</h2></header>
             <p>This is the perfect solution for our business. Well-coordinated teamwork and knowledge in the field of our business created the perfect product for the development of the company. We have already seen amazing results.</p>
-            <div id="colorball"></div>
+            <div id="colorball" class="BCKmain"></div>
             <p>Kevin Drives</p>
             <p>Marketing expert - ReeDip</p>
         </section>
-
+        <!-- SERVICES___________________________________________________________________________ -->
         <div id="services" class="flexSideSide">
+            <!-- Blocks  -->
             <div id="serviceLeft" class="flex">
+                <!-- Left Blocks  -->
                 <div>
-                    <section>
+                    <section class="BCKwhite shadow">
                         <header><h2>Corporate finance</h2></header>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed …</p>
+                        <p><a href="#">Read more</a></p>
                     </section>
-                    <section>
+                    <section class="BCKwhite shadow">
                         <header><h2>Market analysis</h2></header>
                         <p>Nibh vel velit auctor aliqunean sollicitudinlorem bibendum auci …</p>
                         <p><a href="#">Read more</a></p>
                     </section>
                 </div>
+                <!-- Right Blocks -->
                 <div>
-                    <section>
+                    <section class="BCKwhite shadow">
                         <header><h2>Audit & Evaluation</h2></header>
                         <p>Cras risus arcu, sodales ac, ultrices ac, mollis quis, justo. Sed a libero. …</p>
+                        <p><a href="#">Read more</a></p>
                     </section>
-                    <section>
+                    <section class="BCKwhite shadow">
                         <header><h2>Sales & Trade</h2></header>
                         <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi …</p>
+                        <p><a href="#">Read more</a></p>
                     </section>
                 </div>
             </div>
-
+            <!-- Solution  -->
             <div id="serviceRight">
                 <section>
                     <header><h2>Get a solutions to your businesses</h2></header>
@@ -130,7 +138,7 @@
                 </section>
             </div>
         </div>
-
+        <!-- COMMUNITY___________________________________________________________________________ -->
         <section id="community" class="flexSideSide">
             <div id="grayblock"></div>
             <header><h2>We serve fine services in creative community</h2></header>
@@ -141,41 +149,47 @@
             </div>
         </section>
     </main>
-    
+        <!-- FOOTER _____________________________________________________________________________  -->
     <footer class="container">
-        <div id="subscribe" class="flexSideSide">
+        <!-- Subscribe  -->
+        <div id="subscribe" class="flexSideSide BCKmain TXTwhite">
             <p>Subscribe to our newsletters</p>
-            <div><a href="#">Send</a></div>
+            <div><a id="sendButton" href="#">Send</a></div>
         </div>
+        <!-- Footbar  -->
         <div id="footbar" class="flexSideSide">
+            <!-- Left  -->
             <div id="footleft">
                 <div class="logo"></div>
                 <p>The wise man therefore always holds in these on matters to this principle of selection he rejects the to secure other friend.</p>
                 <hr>
             </div>
-            <div id="footContact">
+            <!-- Contact infos  -->
+            <address id="footContact">
                 <p>Contact Info</p>
                 <ul>
                     <li>2 St Gabriel Walk London SE1 6FG, UK</li>
                     <li>+44 141 552 3000</li>
                     <li><a href="mailto:info@merkulov.design">info@merkulov.design</a></li>
                 </ul>
-            </div>
+            </address>
+            <!-- Links  -->
             <div id="links">
                 <p>Links</p>
                 <div class="flex">
                     <ul>
-                        <li>About company</li>
-                        <li>Our services</li>
-                        <li>Portfolio</li>
+                        <li><a href="#">About company</a></li>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">Portfolio</a></li>
                     </ul>
                     <ul>
-                        <li>Team</li>
-                        <li>Contact</li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
+        <!-- Copyright  -->
         <div id="copyright">
             <p>© 2019 <span>Elipso Sketch Template</span> by <a href="#">merkulove</a></p>
         </div>

@@ -78,6 +78,7 @@ body{
 ul li   {   line-height: 2rem;      }
 li      {   list-style: none; padding-left: 0px; }
 a       {   text-decoration: none;  }
+hr{border: 0px; height: 2px;}
 .sepdown    {   margin-bottom: 120px;   }
 /* Generic<<________________________________________________________ */
 .button{
@@ -107,10 +108,12 @@ a       {   text-decoration: none;  }
 }
 
 /* Navbar<<________________________________________________________ */
-#navleft        {   flex: 0 0 56%;  }
-#searchform     {   flex: 0 0 33%;  }
-menu            {   flex: 0 3 80%;  }
-menu a          {   font-weight: 700; color: var(--Col_MainDark); padding-top: 40px; border-top: 2px solid linear-gradient(45deg,var(--Col_Main)var(--Col_Sec)); }
+#navleft        {   flex: 0 56%;  }
+#searchform     {   flex: 0 33%;  }
+menu            {   height: 46px; flex: 3 80%;  }
+menu li         {   align-self: flex-end; padding-top: 38px; padding-bottom: 10px; }
+menu li:hover a {   font-weight: 700; color: var(--Col_MainDark); padding-top: 40px;}
+menu li:hover{border-top: 2px solid var(--Col_Main);}
 #searchform>input{
     background-color: rgba(255, 255, 255, 0.3);
     border: 1px solid #D5D5D5;

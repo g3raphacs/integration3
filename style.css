@@ -58,7 +58,7 @@ html{
 /* BoxModel>>_______________________________________________________ */
 
 /* Container<<______________________________________________________ */
-.container  {   max-width: 1140px; margin: auto;   }
+.container  {   max-width: 1140px; margin: 0px auto;   }
 /* Container>>______________________________________________________ */
 
 /* Flex<<______________________________________________________ */
@@ -73,3 +73,12 @@ body{
 }
 li{ list-style: none; padding-left: 0px;}
 /* Generic<<________________________________________________________ */
+.button{
+    background-image: linear-gradient(45deg,var(--Col_Main)var(--Col_Sec));
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+}
+/* Navbar<<________________________________________________________ */
+
+/* Navbar<<________________________________________________________ */

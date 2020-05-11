@@ -75,8 +75,10 @@ html{
 body{
     margin: 0px;
 }
-li  {   list-style: none; padding-left: 0px;    }
-a   {   text-decoration: none;  }
+ul li   {   line-height: 2rem;      }
+li      {   list-style: none; padding-left: 0px; }
+a       {   text-decoration: none;  }
+.sepdown    {   margin-bottom: 120px;   }
 /* Generic<<________________________________________________________ */
 .button{
     background-image: linear-gradient(45deg,var(--Col_Main)var(--Col_Sec));
@@ -85,6 +87,7 @@ a   {   text-decoration: none;  }
     border-radius: 25px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    margin-top: 50px;
 }
 .linkPink:hover{ color: var(--Col_Sec);}
 /* Background Images */
@@ -121,23 +124,25 @@ menu a          {   font-weight: 700; color: var(--Col_MainDark); padding-top: 4
 
 /* Title<<_________________________________________________________ */
 #title  {   max-width: 436px;   }
+#title>header{   padding: 300px; padding-bottom: 300px;  }
 /* Title<<_________________________________________________________ */
 
 /* Prices<<_________________________________________________________ */
 #priceblock     {   padding: 60px 50px; flex: 0 28%;    }
 #buttonchoice   {   padding: 4px 7px;                   }
-.ulcenter       {   display: flex; justify-content: center; width:100%; }
+.ulcenter       {   display: flex; justify-content: center; width:100%; margin-top: 60px;}
 #price hr{ border-top: 2px solid var(--Col_Sec); width: 40px;}
 /* Prices<<_________________________________________________________ */
 
 /* Testimonial<<_________________________________________________________ */
-#testimonial    {   max-width: 750px;   }
-#colorball      {   width: 100px; height: 100px; border-radius: 50%;    }
+#testimonial    {   max-width: 750px; padding:80px 0px;  }
+#colorball      {   width: 100px; height: 100px; border-radius: 50%; margin-top: 40px;   }
 /* Testimonial<<_________________________________________________________ */
 
 /* Services<<_________________________________________________________ */
 #serviceLeft            { flex: 0 66%;  }
 #serviceRight           { flex: 0 30%;  }
+#serviceRight>header    {    margin-bottom: 80px;    }
 #serviceLeft>div        { flex: 0 47%;  }
 #serviceLeft>div:first-child    { padding-bottom: 30px; }
 #serviceLeft>div:nth-child()    { padding-top: 30px;    }
@@ -157,14 +162,17 @@ menu a          {   font-weight: 700; color: var(--Col_MainDark); padding-top: 4
     border-radius: 50% 50% 50% 25%;
 }
 #communityR{    flex: 0 42%;    }
+#communityR>header{    margin-bottom: 80px;    }
 /* Community>>_________________________________________________________ */
 
 /* Subscribe<<_________________________________________________________ */
+#subscribe{ padding: 25px;}
 #sendButton {   border: 2px solid white; padding: 15px 30px;}
 /* Subscribe<<_________________________________________________________ */
 
 /* Footer<<____________________________________________________________ */
 #footbar>*      {   flex: 0 30%;   }
 .linklist       {   flex: 0 50%;   }
-footer hr{ border-top: 2px solid #D8D8D8; width: 80px; }
+footer hr       { border-top: 2px solid #D8D8D8; width: 80px; }
+#copyright      {margin-top: 40px;}
 /* Footer<<____________________________________________________________ */

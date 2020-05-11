@@ -133,3 +133,17 @@ menu a          {   font-weight: 700; color: var(--Col_MainDark); padding-top: 4
 #testimonial{max-width: 750px;}
 #colorball{width: 100px; height: 100px; border-radius: 50%;}
 /* Testimonial<<_________________________________________________________ */
+
+/* Services<<_________________________________________________________ */
+#serviceLeft{ flex: 0 66%;}
+#serviceRight{ flex: 0 30%;}
+#serviceLeft>div{ flex: 0 47%;}
+#serviceLeft>div:first-child{ padding-bottom: 30px;}
+#serviceLeft>div:nth-child(){ padding-top: 30px;}
+.servBlock{min-height:230px;}
+.servBlock:first-child{margin-bottom: 30px; padding: 100px 30px 50px 30px;}
+.servBlock>p:last-child{display: none;}
+.servBlock:hover>p:last-child{display: block;}
+.servBlock:hover{background-image: linear-gradient(45deg,var(--Col_Main)var(--Col_Sec)); padding: 50px 30px;}
+.servBlock:hover *{color: var(--Col_White);}
+/* Services<<_________________________________________________________ */

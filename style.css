@@ -1,21 +1,51 @@
 /* Fonts<<__________________________________________________________ */
-fSize50 {   font-size:  3.13rem;     }
-fSize34 {   font-size:  2.13rem;     }
-fSize22 {   font-size:  1.38rem;     }
-fSize20 {   font-size:  1.25rem;     }
-fSize18 {   font-size:  1.11rem;     }
-fSize16 {   font-size:  1rem;        }
-fSize15 {   font-size:  0.94rem;     }
-fSize14 {   font-size:  0.88rem;     }
-fMed    {   font-weight: 500;        }
-fBold   {   font-weight: 700;        }
-fontSec {   font-family: 'Poppins', sans-serif; }
+.fSize50 {   font-size:   3.13rem;    }
+.fSize34 {   font-size:   2.13rem;    }
+.fSize22 {   font-size:   1.38rem;    }
+.fSize20 {   font-size:   1.25rem;    }
+.fSize18 {   font-size:   1.11rem;    }
+.fSize16 {   font-size:   1rem;       }
+.fSize15 {   font-size:   0.94rem;    }
+.fSize14 {   font-size:   0.88rem;    }
+.fMed    {   font-weight: 500;        }
+.fBold   {   font-weight: 700;        }
+.fontSec {   font-family: 'Poppins', sans-serif; }
+
+/* font positioning */
+.TXTleft    {   text-align     : center;    }
+.TXTcenter  {   text-align     : center;    }
+.TXTjustif  {   text-align     : justify;   }
+.TXTlineL   {   line-height    : 2rem;      }
 
 html{
-    font-size: 16px;
-    font-family: 'Nunito', sans-serif;
-    font-style: normal;
-    font-weight: normal;
+    font-size:      16px;
+    font-family:    'Nunito', sans-serif;
+    font-style:     normal;
+    font-weight:    normal;
+    color:          var(--Col_GrayDark);
 }
 /* Fonts>>__________________________________________________________ */
+
+/* Colors<<_________________________________________________________ */
+:root{
+    --Col_Main:         #6852ED;
+    --Col_MainDark:     #554D89;
+    --Col_Sec:          #BA43FC;
+    --Col_Gray:         #716C80;
+    --Col_GrayDark:     #5B5766;
+    --Col_GrayLight:    rgba(225, 228, 237, 0.3);
+    --Col_Highlight:    #EF7171;
+    --Col_White:        white;
+}
+/* TXT */
+.TXTmainDark    {   color: var(--Col_MainDark); }
+.TXTgray        {   color: var(--Col_Gray);     }
+.TXTwhite       {   color: var(--Col_White);    }
+
+/* BCK */
+.BCKgray    {   background-color: var(--Col_GrayLight);     }
+.BCKwhite   {   background-color: var(--Col_White);         }
+.BCKmain    {   background-color: var(--Col_Main);          }
+.BCKgrad    {   background-image: linear-gradient(45deg,var(--Col_Main),var(--Col_Sec));}
+/* Colors>>_________________________________________________________ */
 

@@ -127,6 +127,7 @@ menu a          {   font-weight: 700; color: var(--Col_MainDark); padding-top: 4
 #priceblock     {   padding: 60px 50px; flex: 0 28%;    }
 #buttonchoice   {   padding: 4px 7px;                   }
 .ulcenter       {   display: flex; justify-content: center; width:100%; }
+#price hr{ border-top: 2px solid var(--Col_Sec); width: 40px;}
 /* Prices<<_________________________________________________________ */
 
 /* Testimonial<<_________________________________________________________ */
@@ -157,3 +158,13 @@ menu a          {   font-weight: 700; color: var(--Col_MainDark); padding-top: 4
 }
 #communityR{    flex: 0 42%;    }
 /* Community>>_________________________________________________________ */
+
+/* Subscribe<<_________________________________________________________ */
+#sendButton {   border: 2px solid white; padding: 15px 30px;}
+/* Subscribe<<_________________________________________________________ */
+
+/* Footer<<____________________________________________________________ */
+#footbar>*      {   flex: 0 30%;   }
+.linklist       {   flex: 0 50%;   }
+footer hr{ border-top: 2px solid #D8D8D8; width: 80px; }
+/* Footer<<____________________________________________________________ */

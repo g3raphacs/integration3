@@ -123,7 +123,7 @@ menu li:hover   {
 /* Navbar<<______________________________________
 
 /* Title<<_________________________________________________________ */
-#title {background-color: rgba(255, 255, 255, 0.55); border-radius: 10px;}
+#title {background-color: rgba(255, 255, 255, 0.55); border-radius: 0px 150px 0px 0px;}
 #title  {   max-width: 436px;  padding: 0px 20px;  }
 #title>header{   margin-top: 200px; padding-bottom: 250px; padding-top: 20px; }
 /* Title<<_________________________________________________________ */
@@ -229,12 +229,12 @@ footer hr       {   border-top: 2px solid #D8D8D8; width: 80px; }
     /* navbar */
     #navbar {justify-content: space-between;}
     #mainheader{background-position: right 0 top 80px;}
-        /* price  */
-        .priceblock     { flex: 0 32%;  }
+    /* price  */
+    .priceblock     { flex: 0 32%;  }
 }
 
 /* M _________________________________________________________________________________*/
-@media (max-width: 991.98px) {
+@media (max-width: 1059.98px) {
     .container  {   margin: 0px 3vw;                        }
     /* navbar  */
     #mainheader{background-position: right 0 top 0px;}
@@ -248,13 +248,23 @@ footer hr       {   border-top: 2px solid #D8D8D8; width: 80px; }
     .ulcenter{padding-left: 15px;}
     #buttonchoice{display: none;}
     /* services  */
+    #services    { flex-wrap: wrap;}
+    #serviceRight{flex: 0 100%; padding: 5vw;}
+    #serviceLeft            { flex: 0 100%;  }
+    .servBlock    {background-image: linear-gradient(45deg,var(--Col_Main),var(--Col_Sec)); padding: 30px 30px;}
+    .servBlock *  { color: var(--Col_White);  }
+    .servBlock>p:last-child   { display: block; margin-top: 35px;}
+    .servBlock>p:last-child>a   { padding: 30px;}
 
 }
 
 /* S _________________________________________________________________________________*/
 @media (max-width: 767.98px) {
     .container  {   margin: 0px 2vw;    }
-
+    /* services  */
+    #serviceLeft            { flex-wrap: wrap; }
+    #serviceLeft>div        { flex: 0 100%;  }
+    .servBlock {margin-bottom: 30px;}
 }
 
 /* XS _________________________________________________________________________________*/

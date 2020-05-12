@@ -52,7 +52,7 @@ html{
 .BCKmain    {   background-color: var(--Col_Main);          }
 .BCKgrad    {   background-image: linear-gradient(45deg,var(--Col_Main),var(--Col_Sec));}
 .shadow     {   box-shadow: 0px 0px 20px #E1E4ED;}
-.alpha70    {   opacity: 0.7;   }
+.alpha70    {   opacity: 0.5;   }
 /* Colors>>_________________________________________________________ */
 
 /* BoxModel<<_______________________________________________________ */
@@ -62,9 +62,6 @@ html{
 .m0child *  {   margin:  0px;    }
 /* BoxModel>>_______________________________________________________ */
 
-/* Container<<______________________________________________________ */
-.container  {   max-width: 1140px; margin: 0px auto; padding: 0px 10px;  }
-/* Container>>______________________________________________________ */
 
 /* Flex<<______________________________________________________ */
 .flex           {   display: flex;  }
@@ -99,32 +96,25 @@ hr      {   border: 0px; height: 2px;   }
 
 .linkPink:hover{ color: var(--Col_Highlight);}
 /* Background Images */
-.logo{
-    width: 119px;
-    height: 40px;
-    background-image: url("./img/Logo-White.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    mix-blend-mode: multiply;
-}
+
 #mainheader{
     background-image: url("./img/shape.svg");
     background-position: right 0 top 0%;
     background-repeat: no-repeat;
-    background-size:  1000px;
+    background-size:  800px;
 }
 .decalUP{
     position: relative;
-    top: -600px;
+    top: -530px;
     }
 
 
 /* Navbar<<________________________________________________________ */
-/* #navbar {background-color: rgba(255, 255, 255, 0.40); border-radius: 10px;} */
-#navbar>div {  flex: 0 15%;   margin-top: 18px; background-color: white;}
+#navbar>div:first-child {  flex: 0 119px;   margin-top: 18px;}
+#navbutton  { position: fixed; top: 15px; right: 30px; display: none; z-index: 2;}
 menu            {   height: 46px; flex: 0 50%;  }
 menu li         {   align-self: flex-end; padding: 26px 10px 10px 10px;}
-menu li:hover a {   font-weight: 700; color: var(--Col_MainDark); padding: 15px 0px 0px 0px;}
+menu li:hover a {   font-weight: 700; color: var(--Col_MainDark); padding: 25px 10px 25px 10px;}
 menu li:hover   {
     border-width:   2px;
     border-style:   solid;
@@ -133,31 +123,36 @@ menu li:hover   {
 /* Navbar<<______________________________________
 
 /* Title<<_________________________________________________________ */
-#title {background-color: rgba(255, 255, 255, 0.40);}
+#title {background-color: rgba(255, 255, 255, 0.55); border-radius: 10px;}
 #title  {   max-width: 436px;  padding: 0px 20px;  }
-#title>header{   padding-top: 300px; padding-bottom: 300px;  }
+#title>header{   margin-top: 200px; padding-bottom: 250px; padding-top: 20px; }
 /* Title<<_________________________________________________________ */
 
 /* Prices<<_________________________________________________________ */
 .priceblock     {   box-sizing: border-box; padding: 60px 50px; flex: 0 30%;  }
 .priceblock>p:nth-child(4){margin: 2px 0px;}
-#buttonchoice   {   padding: 4px 7px; border-radius: 10px;}
+#buttonchoice   {   padding: 4px 7px; border-radius: 10px; font-weight: 700;}
 .ulcenter       {   display: flex; justify-content: center; width:100%; margin: 30px 0px 0px 0px;   }
 #price hr       {   border-top: 2px solid var(--Col_Sec); width: 40px; margin: 0;   }
 .prix           {   margin: 20px 0px 0px 0px; line-height: 3rem;   }
+#price          {   margin-bottom: 120px;}
 /* Prices<<_________________________________________________________ */
 
 /* Testimonial<<_________________________________________________________ */
 #testimonial    {   max-width: 750px; padding: 0px 20px; }
 #testimonial>h2 {   margin-bottom: 0px;}
-#testimonial>p:nth-child(4) {   margin-bottom: 0px;}
-#testimonial>p:nth-child(5) {   margin-top: 2px;}
+#testimonial>p:nth-child(4) {   margin-bottom: 0px; }
+#testimonial>p:nth-child(5) {   margin-top: 2px;    }
 #colorball      {   width: 100px; height: 100px; border-radius: 50%; margin-top: 40px;
 background-image: url("./img/testimonialGuy.jpg");
 background-position: center;
 background-size: cover;
 }
-#testimonialC   {   min-height: 600px;  }
+#testimonialC   {
+    min-height: 600px;
+    position: relative;
+    top: -600px;
+}
 #testimonialBCK{
     background-image: url("./img/city2.jpg");
     background-position: bottom 0 left 10%;
@@ -169,15 +164,13 @@ background-size: cover;
     mask-repeat: no-repeat, no-repeat;
     mask-size:  240px, 670px;
     height: 600px;
-
 }
 /* Testimonial<<_________________________________________________________ */
 
 /* Services<<_________________________________________________________ */
-#services               { min-height: 600px;}
+#services               { min-height: 600px; margin-bottom: 70px;}
 #serviceLeft            { flex: 0 66%;  }
 #serviceRight           { flex: 0 30%;  }
-#serviceRight>header    {    margin-bottom: 80px;    }
 #serviceLeft>div        { flex: 0 47%;  }
 .servBlock                      { min-height:230px;  padding: 80px 30px 20px 30px; box-sizing: border-box; border-radius: 10px;   }
 .servBlock:first-child          { margin-bottom: 30px; }
@@ -201,16 +194,69 @@ background-size: cover;
 /* Community>>_________________________________________________________ */
 
 /* Subscribe<<_________________________________________________________ */
-#subscribe{ padding:15px 25px; border-radius: 10px;}
+#subscribe{ padding:15px 25px; border-radius: 10px; margin-top: 80px;}
 #sendButton {   border: 2px solid white; padding: 15px 30px; color: white; border-radius: 30px;}
 /* Subscribe<<_________________________________________________________ */
 
 /* Footer<<____________________________________________________________ */
 #footbar        {   align-items: stretch;  }
-#footbar .logo        {   margin-bottom: 16px;  }
+#footbar .logo  {   margin-bottom: 0px;  }
+#footleft>p     {   margin-top: 9px;}
 #footbar hr     {   justify-self: end;  }
 #footbar>*      {   flex: 0 30%;   }
 footer hr       {   border-top: 2px solid #D8D8D8; width: 80px; }
 #copyright      {   margin-top: 40px;   }
-#links>p:first-child , #footContact>p:first-child {   margin-top: 0px;}
+#links>p:first-child , #footContact>p:first-child {   margin-top: 10px;}
 /* Footer<<____________________________________________________________ */
+
+/* RESPONSIVE_________________________________________________________________________*/
+
+/* XL ________________________________________________________________________________*/
+
+.container  {   max-width: 1140px; margin: 0px auto; padding: 0px 10px;  }
+
+/* Backgroung step _________________________________________________________________________________*/
+@media (max-width: 1499.98px) {
+    /* navbar */
+    #navbar {background-color: white; border-radius: 0px 0px 100px 0px; max-width: 1000px;}
+    menu            { flex: 0 70%;  }
+
+}
+
+/* L _________________________________________________________________________________*/
+@media (max-width: 1199.98px) {
+    .container  {  margin: 0px 5vw;   }
+    /* navbar */
+    #navbar {justify-content: space-between;}
+    #mainheader{background-position: right 0 top 80px;}
+        /* price  */
+        .priceblock     { flex: 0 32%;  }
+}
+
+/* M _________________________________________________________________________________*/
+@media (max-width: 991.98px) {
+    .container  {   margin: 0px 3vw;                        }
+    /* navbar  */
+    #mainheader{background-position: right 0 top 0px;}
+    #navbar {background-color: rgba(255, 255, 255, 0);}
+    #navbutton  {display: block;}
+    menu>li{display: none;}
+    /* price  */
+    #price  {   flex-wrap: wrap;    }
+    .priceblock     { flex: 0 100%; margin-bottom: 10px; }
+    .priceflex{display: flex; justify-content: space-between;}
+    .ulcenter{padding-left: 15px;}
+    #buttonchoice{display: none;}
+    /* services  */
+
+}
+
+/* S _________________________________________________________________________________*/
+@media (max-width: 767.98px) {
+    .container  {   margin: 0px 2vw;    }
+
+}
+
+/* XS _________________________________________________________________________________*/
+@media (max-width: 575.98px) {
+}

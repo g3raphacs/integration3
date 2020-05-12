@@ -81,6 +81,7 @@ li      {   list-style: none; padding-left: 0px; }
 a       {   text-decoration: none;      }
 hr      {   border: 0px; height: 2px;   }
 .sepdown    {   margin-bottom: 120px;   }
+.sepdown2    {   margin-bottom: 50px;   }
 /* Generic<<________________________________________________________ */
 .button{
     background-image: linear-gradient(45deg,var(--Col_Main),var(--Col_Sec));
@@ -161,13 +162,14 @@ menu li:hover   {   border-top: 2px solid var(--Col_Main);  }
 
 /* Community<<_________________________________________________________ */
 #grayblock{
-    flex: 0 53%;
+    flex: 0 50%;
     min-height: 474px ;
     min-Width:  650px ;
-    border-radius: 50% 50% 50% 25%;
+    border-radius: 300px 300px 300px 150px;
 }
-#communityR{    flex: 0 42%;    }
-#communityR>header{    margin-bottom: 80px;    }
+#communityR     {    flex: 0 40%;}
+#commuButtons   {   width: 100%; align-items: end;}
+#commuButtons div:nth-child(2){ padding-bottom: 12px;}
 /* Community>>_________________________________________________________ */
 
 /* Subscribe<<_________________________________________________________ */

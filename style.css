@@ -231,6 +231,16 @@ footer hr       {   border-top: 2px solid #D8D8D8; width: 80px; }
     #mainheader{background-position: right 0 top 80px;}
     /* price  */
     .priceblock     { flex: 0 32%;  }
+        /* community  */
+        #community    { flex-wrap: wrap;}
+        #grayblock{
+            flex: 0 100%;
+            min-height: 250px ;
+            min-width: 100%;
+            border-radius: 125px 125px 125px 50px;
+        }
+        #communityR {flex: 0 100%; padding: 5vw;}
+        #communityR *{text-align: left;}
 }
 
 /* M _________________________________________________________________________________*/
@@ -255,6 +265,9 @@ footer hr       {   border-top: 2px solid #D8D8D8; width: 80px; }
     .servBlock *  { color: var(--Col_White);  }
     .servBlock>p:last-child   { display: block; margin-top: 35px;}
     .servBlock>p:last-child>a   { padding: 30px;}
+    /* footer  */
+    #links li , #footContact li {line-height: 3rem;}
+
 
 }
 
@@ -265,8 +278,16 @@ footer hr       {   border-top: 2px solid #D8D8D8; width: 80px; }
     #serviceLeft            { flex-wrap: wrap; }
     #serviceLeft>div        { flex: 0 100%;  }
     .servBlock {margin-bottom: 30px;}
+    /* footer  */
+    #footleft     {  display: none;}
+    #links , #footContact {   flex: 0 48%;}
+    
 }
 
 /* XS _________________________________________________________________________________*/
 @media (max-width: 575.98px) {
+    /* footer  */
+    #footbar {flex-wrap: wrap;}
+    #links , #footContact {   flex: 0 100%;}
+    #links ul {padding-left:40px;}
 }

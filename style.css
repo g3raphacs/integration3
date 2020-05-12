@@ -42,6 +42,7 @@ html{
 .TXTmain        {   color: var(--Col_Main);         }
 .TXTmainDark    {   color: var(--Col_MainDark);     }
 .TXTgray        {   color: var(--Col_Gray);         }
+.TXTgrayDark    {   color: var(--Col_GrayDark);     }
 .TXTwhite       {   color: var(--Col_White);        }
 .TXThighlight   {   color: var(--Col_Highlight);    }
 
@@ -96,38 +97,27 @@ hr{border: 0px; height: 2px;}
     width: 119px;
     height: 40px;
     background-image: url("./img/Logo-White.svg");
-    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
-#mainheader{
+/* #mainheader{
     background-image: url("./img/shape.svg");
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-}
+} */
 
 /* Navbar<<________________________________________________________ */
-#navleft        {   flex: 0 56%;  }
-#searchform     {   flex: 0 33%;  }
-menu            {   height: 46px; flex: 3 80%;  }
-menu li         {   align-self: flex-end; padding-top: 38px; padding-bottom: 10px; }
+#navbar>div {  flex: 0 15%;   margin-top: 18px  }
+menu            {   height: 46px; flex: 0 50%;  }
+menu li         {   align-self: flex-end; padding-top: 28px; padding-bottom: 10px; }
 menu li:hover a {   font-weight: 700; color: var(--Col_MainDark); padding-top: 40px;}
 menu li:hover{border-top: 2px solid var(--Col_Main);}
-#searchform>input{
-    background-color: rgba(255, 255, 255, 0.3);
-    border: 1px solid #D5D5D5;
-    background-image: url(./img/loupe.svg);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 0px 12px;
-}
 /* Navbar<<________________________________________________________ */
 
 /* Title<<_________________________________________________________ */
 #title  {   max-width: 436px;   }
-#title>header{   padding: 300px; padding-bottom: 300px;  }
+#title>header{   padding-top: 300px; padding-bottom: 300px;  }
 /* Title<<_________________________________________________________ */
 
 /* Prices<<_________________________________________________________ */

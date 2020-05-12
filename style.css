@@ -173,8 +173,8 @@ menu li:hover   {   border-top: 2px solid var(--Col_Main);  }
 /* Community>>_________________________________________________________ */
 
 /* Subscribe<<_________________________________________________________ */
-#subscribe{ padding: 25px;}
-#sendButton {   border: 2px solid white; padding: 15px 30px;}
+#subscribe{ padding: 25px; border-radius: 10px;}
+#sendButton {   border: 2px solid white; padding: 15px 30px; color: white; border-radius: 30px;}
 /* Subscribe<<_________________________________________________________ */
 
 /* Footer<<____________________________________________________________ */

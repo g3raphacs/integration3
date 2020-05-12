@@ -281,7 +281,6 @@ footer hr       {   border-top: 2px solid #D8D8D8; width: 80px; }
     /* footer  */
     #footleft     {  display: none;}
     #links , #footContact {   flex: 0 48%;}
-    
 }
 
 /* XS _________________________________________________________________________________*/

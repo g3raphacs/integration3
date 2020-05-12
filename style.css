@@ -105,7 +105,11 @@ hr      {   border: 0px; height: 2px;   }
 }
 .decalUP{
     position: relative;
-    top: -530px;
+    top: -600px;
+    }
+.decalDown{
+    position: relative;
+    top: +600px;
     }
 
 
@@ -150,10 +154,9 @@ background-size: cover;
 }
 #testimonialC   {
     min-height: 600px;
-    position: relative;
-    top: -600px;
 }
 #testimonialBCK{
+    z-index: -1;
     background-image: url("./img/city2.jpg");
     background-position: bottom 0 left 10%;
     background-repeat: no-repeat;
@@ -168,7 +171,7 @@ background-size: cover;
 /* Testimonial<<_________________________________________________________ */
 
 /* Services<<_________________________________________________________ */
-#services               { min-height: 600px; margin-bottom: 70px;}
+#services               { min-height: 600px; margin-bottom: 70px; margin-top: 70px;}
 #serviceLeft            { flex: 0 66%;  }
 #serviceRight           { flex: 0 30%;  }
 #serviceLeft>div        { flex: 0 47%;  }

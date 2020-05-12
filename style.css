@@ -50,7 +50,7 @@ html{
 .BCKgray    {   background-color: var(--Col_GrayLight);     }
 .BCKwhite   {   background-color: var(--Col_White);         }
 .BCKmain    {   background-color: var(--Col_Main);          }
-.BCKgrad    {   background-image: linear-gradient(45deg,var(--Col_Main)var(--Col_Sec));}
+.BCKgrad    {   background-image: linear-gradient(45deg,var(--Col_Main),var(--Col_Sec));}
 .shadow     {   box-shadow: 0px 0px 20px #E1E4ED;}
 .alpha70    {   opacity: 0.7;   }
 /* Colors>>_________________________________________________________ */
@@ -83,13 +83,14 @@ hr{border: 0px; height: 2px;}
 .sepdown    {   margin-bottom: 120px;   }
 /* Generic<<________________________________________________________ */
 .button{
-    background-image: linear-gradient(45deg,var(--Col_Main)var(--Col_Sec));
+    background-image: linear-gradient(45deg,var(--Col_Main),var(--Col_Sec));
     color: white;
     padding: 12px 25px;
     border-radius: 25px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     margin-top: 50px;
+    margin-right: 20px;
 }
 .linkPink:hover{ color: var(--Col_Sec);}
 /* Background Images */
@@ -106,13 +107,19 @@ hr{border: 0px; height: 2px;}
     background-repeat: no-repeat;
     background-size: contain;
 } */
+/* #mainheader{
+    background-image: linear-gradient(45deg,red,blue);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
 
 /* Navbar<<________________________________________________________ */
 #navbar>div {  flex: 0 15%;   margin-top: 18px  }
 menu            {   height: 46px; flex: 0 50%;  }
-menu li         {   align-self: flex-end; padding-top: 28px; padding-bottom: 10px; }
+menu li         {   align-self: flex-end; padding: 28px 10px 0px 10px; padding-bottom: 10px; }
 menu li:hover a {   font-weight: 700; color: var(--Col_MainDark); padding-top: 40px;}
-menu li:hover{border-top: 2px solid var(--Col_Main);}
+menu li:hover   {   border-top: 2px solid var(--Col_Main);  }
 /* Navbar<<________________________________________________________ */
 
 /* Title<<_________________________________________________________ */
@@ -121,14 +128,19 @@ menu li:hover{border-top: 2px solid var(--Col_Main);}
 /* Title<<_________________________________________________________ */
 
 /* Prices<<_________________________________________________________ */
-#priceblock     {   padding: 60px 50px; flex: 0 28%;    }
-#buttonchoice   {   padding: 4px 7px;                   }
-.ulcenter       {   display: flex; justify-content: center; width:100%; margin-top: 60px;}
-#price hr{ border-top: 2px solid var(--Col_Sec); width: 40px;}
+.priceblock     {   box-sizing: border-box; padding: 60px 50px; flex: 0 30%;  }
+.priceblock>p:nth-child(4){margin: 2px 0px;}
+#buttonchoice   {   padding: 4px 7px; border-radius: 10px;}
+.ulcenter       {   display: flex; justify-content: center; width:100%; margin: 30px 0px 40px 0px;   }
+#price hr       {   border-top: 2px solid var(--Col_Sec); width: 40px; margin: 0;   }
+.prix           {   margin: 20px 0px 0px 0px; line-height: 3rem;   }
 /* Prices<<_________________________________________________________ */
 
 /* Testimonial<<_________________________________________________________ */
 #testimonial    {   max-width: 750px; padding:80px 0px;  }
+#testimonial>h2 {   margin-bottom: 0px;}
+#testimonial>p:nth-child(4) {   margin-bottom: 0px;}
+#testimonial>p:nth-child(5) {   margin-top: 2px;}
 #colorball      {   width: 100px; height: 100px; border-radius: 50%; margin-top: 40px;   }
 /* Testimonial<<_________________________________________________________ */
 
@@ -143,7 +155,7 @@ menu li:hover{border-top: 2px solid var(--Col_Main);}
 .servBlock:first-child          { margin-bottom: 30px; padding: 100px 30px 50px 30px; }
 .servBlock>p:last-child         { display: none;        }
 .servBlock:hover>p:last-child   { display: block;       }
-.servBlock:hover{background-image: linear-gradient(45deg,var(--Col_Main)var(--Col_Sec)); padding: 50px 30px;}
+.servBlock:hover    {background-image: linear-gradient(45deg,var(--Col_Main),var(--Col_Sec)); padding: 50px 30px;}
 .servBlock:hover *              { color: var(--Col_White);  }
 /* Services<<_________________________________________________________ */
 
@@ -166,6 +178,6 @@ menu li:hover{border-top: 2px solid var(--Col_Main);}
 /* Footer<<____________________________________________________________ */
 #footbar>*      {   flex: 0 30%;   }
 .linklist       {   flex: 0 50%;   }
-footer hr       { border-top: 2px solid #D8D8D8; width: 80px; }
-#copyright      {margin-top: 40px;}
+footer hr       {   border-top: 2px solid #D8D8D8; width: 80px; }
+#copyright      {   margin-top: 40px;   }
 /* Footer<<____________________________________________________________ */
